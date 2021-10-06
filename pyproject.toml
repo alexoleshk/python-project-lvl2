@@ -3,6 +3,9 @@ name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = ["Alexander Oleshkevich <ajiekc42@gmail.com>"]
+packages = [
+  { include = "diff_generator" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"

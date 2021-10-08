@@ -1,8 +1,10 @@
 import argparse
 import json
 
+
 def gen_str(dict, key, char):
     return '\n  {} {}: {}'.format(char, key, dict[key])
+
 
 def generate_diff(file_path1, file_path2):
     first_file = json.load(open(file_path1))

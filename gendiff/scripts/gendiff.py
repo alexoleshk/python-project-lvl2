@@ -31,12 +31,10 @@ def generate_diff(file_path1, file_path2):
     return result
 
 
-
-parser = argparse.ArgumentParser(description='Generate diff')
-parser.add_argument('first_file', type=str)
-parser.add_argument('second_file', type=str)
-parser.add_argument('-f', '--format', help='set format of output')
-args = parser.parse_args()
-
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Generate diff')
+    parser.add_argument('first_file', type=str)
+    parser.add_argument('second_file', type=str)
+    parser.add_argument('-f', '--format', help='set format of output')
+    args = parser.parse_args()
     print(generate_diff(args.first_file, args.second_file))

@@ -8,5 +8,5 @@ def test_generate_diff():
     assert generate_diff(
         os.path.abspath('diff_generator/tests/fixtures/file1.json'),
         os.path.abspath('diff_generator/tests/fixtures/file2.json')
-    ) + '\n' == text
+    ) == text
     f.close()

@@ -15,3 +15,7 @@ lint:
 
 test:
 	poetry run pytest
+
+check: test lint
+
+.PHONY: install build publish package-install lint test check
